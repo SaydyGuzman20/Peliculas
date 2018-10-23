@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row bg-dark">
+        <div class="col-25 bg-dark" >
+            <h3>CATEGORIAS</h3><br>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0 " type="submit">Search</button>
+        </form>
+            <div class="col-75">
+                <ng-container *ngFor="let cat of categorias">
+                    <a routerLink="/pagina2/{{cat.id}}" class=" bg-danger text-white list-group-item list-group-item-action"><b>( {{ cat.id }} )</b> {{ cat.name }}</a>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>

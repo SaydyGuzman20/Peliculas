@@ -1,0 +1,32 @@
+<div class="container ">
+  <div class="row ">
+    <div class="col ">
+      <div class="alert alert-success bg-danger" role="alert">
+        <ng-container *ngFor="let pelis of peliculas">
+          <div class="card col-md-12 bg-dark" >
+            <ng-container *ngIf="pelis.id_p == id_p">
+              <h1 class="font-weight-light">{{pelis.name}}</h1>
+              <div class="card bg-dark ">
+                <div class="img">
+                  <img src="{{pelis.img}}" width="200px" height="200px">
+                </div>
+
+                <div class="detail">
+                  <h6>
+                    <span class="text text-white" >{{pelis.descripcion}}</span>
+                  </h6>
+
+                </div>
+              </div>
+
+            </ng-container>
+          </div>
+        </ng-container>
+
+
+        <hr>
+
+      </div>
+    </div>
+  </div>
+</div>

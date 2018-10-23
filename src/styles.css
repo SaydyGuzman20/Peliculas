@@ -1,0 +1,29 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Application-wide Styles */
+
+h1 {
+    color: #DF0101;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+h3 {
+  color: #DF0101;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #DF0101;
+
+}
+
+
+/* everywhere else */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
